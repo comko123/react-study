@@ -6,6 +6,5 @@ return (<>
 <ul>{genres.map(G=><li key = {G}>{G}</li>)}</ul>
 <h2>줄거리 : {sum}</h2>
 </>)
-
 }
 export default MoviePage
