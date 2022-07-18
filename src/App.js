@@ -4,7 +4,7 @@ export default function App() {
   return (
     <BrowserRouter>
     <Routes>
-    <Route path="/" element={<Page/>} />
+    <Route path="/" element={<Page/>}/>
     </Routes>
     </BrowserRouter>
   );
