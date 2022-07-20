@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { useDeferredValue, useEffect,useState,useTransition } from "react"
 import axios from "axios"
 import MoviePage from "./MoviePage"
@@ -6,7 +7,8 @@ const Page = () => {
     const [ispending,startTransition] = useTransition()
     const state = useDeferredValue(data)
 useEffect(()=>{
-    startTransition(async()=>setData(await(
+    startTransition(async()=>
+    setData(await(
     await axios(`https://yts.mx/api/v2/list_movies.json?minimum_rating=9&sort_by=year`)
     ).data.data.movies))
 },[])

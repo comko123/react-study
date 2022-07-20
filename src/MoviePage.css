@@ -1,0 +1,10 @@
+.movie {
+display: flex;
+border-bottom: 5px solid black;
+margin-top :10px;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+}
