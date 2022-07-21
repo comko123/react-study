@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import { useDeferredValue, useEffect,useState,useTransition } from "react"
+import {useDeferredValue, useEffect,useState,useTransition} from "react"
 import axios from "axios"
 import MoviePage from "./MoviePage"
 const Page = () => {
@@ -14,7 +14,7 @@ useEffect(()=>{
 },[])
 return (
 <>
-{ispending?<h1>loading</h1>:
+{ispending?<h1>loading.....</h1>:
 state.map(({medium_cover_image,genres,summary,id,title_long,rating})=>
  <MoviePage 
 key = {id} 

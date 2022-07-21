@@ -1,7 +1,13 @@
+body{
+    background-color: black;
+    border : 8px solid goldenrod;
+    margin:0px;
+}
 .movie {
 display: flex;
-border-bottom: 5px solid black;
-margin-top :10px;
+border-bottom: 8px solid orange;
+color:white
+
 }
 .cont {
     display: flex;
