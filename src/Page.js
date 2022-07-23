@@ -25,6 +25,5 @@ sum = {summary}
 rat = {rating}/>
 )}
 </>
-)
-}
+)}
 export default Page

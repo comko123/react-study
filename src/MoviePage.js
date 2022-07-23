@@ -8,6 +8,5 @@ return (<div className = "movie">
 <ul>장르 : {genres.map(G=><li key = {G}>{G}</li>)}</ul>
 <h2>줄거리 : {sum}</h2>
 </div>
-</div>)
-}
+</div>)}
 export default MoviePage
