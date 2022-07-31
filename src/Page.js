@@ -6,12 +6,14 @@ const Page = () => {
     const [data,setData] =useState([])
     const [ispending,startTransition] = useTransition()
     const state = useDeferredValue(data)
+   
 useEffect(()=>{
+    try{
     startTransition(async()=>
     setData(await(
     await axios(`https://yts.mx/api/v2/list_movies.json?minimum_rating=9&sort_by=year`)
-    ).data.data.movies))
-},[])
+    ).data.data.movies))}
+        catch(e){ console.log(e)}},[])
 return (
 <>
 {ispending?<h1>loading.....</h1>:
