@@ -19,7 +19,8 @@ return (
 {ispending?<h1>loading.....</h1>:
 state.map(({medium_cover_image,genres,summary,id,title_long,rating})=>
  <MoviePage 
-key = {id} 
+key = {id}
+id = {id} 
 title = {title_long}
 img = {medium_cover_image}
 genres = {genres}
