@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import Page from "./Page";
 import Detail from "./Detail";
 import ErroePages from "./ErrorPages";

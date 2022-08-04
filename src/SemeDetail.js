@@ -1,9 +1,10 @@
-import "./Detaill.moudule.scss";
-const SemeDetail = ({like_count,description_full,title_long,runtime,rating,genres}) => {
+/*eslint-disable*/
+import "./SemeDetaill.moudule.scss";
+const SemeDetail = ({like_count,description_full,title_long,runtime,rating,genres,medium_cover_image}) => {
 
     return(<>
     <div className="container">
-    <img src="https://yts.mx/assets/images/movies/rocketry_the_nambi_effect_2022/large-cover.jpg"alt ="no"/>
+    <img src={medium_cover_image}alt ="no"/>
     <div className="parts">
     <h1 className="title">제목 : {title_long}</h1>
     <ul style = {{"fontSize" : "25px"}}>

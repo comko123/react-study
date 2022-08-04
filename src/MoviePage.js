@@ -1,4 +1,5 @@
-import "./Movie.moudule.scss";
+/*eslint-disable*/
+import "./MoviePage.moudule.scss";
 import { Link } from "react-router-dom";
 const MoviePage = ({img,genres,sum,title,id,rat}) => {
 return (<div className = "movie">
