@@ -2,6 +2,7 @@
 import "./MoviePage.moudule.scss";
 import { Link } from "react-router-dom";
 const MoviePage = ({img,genres,sum,title,id,rat}) => {
+console.log(sum)
 return (<div className = "movie">
 <img src = {img} alt = {rat}/>
 <div className = "cont">
