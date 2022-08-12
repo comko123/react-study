@@ -1,0 +1,13 @@
+@mixin setMargin ($left , $right){
+margin-left: $left;
+margin-right: $right;}
+
+.may{
+display: flex;
+justify-content: space-between;
+border-bottom: 8px solid orange;
+.defaultRat{text-align: center;}
+.defaultTit{border-radius: 10px;}
+.leftBox{@include setMargin(150px,0px)}
+.rightBox{@include setMargin(0px,150px)}
+.inputType{width: 300px;}}
