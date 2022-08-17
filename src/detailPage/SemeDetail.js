@@ -8,7 +8,7 @@ return(<>
 <img src={medium_cover_image}alt ="no"/>
 <div className="parts">
 <h1 className="title">제목 : {title_long}</h1>
-<ul style = {{"fontSize" : "25px"}}>
+<ul style = {{fontSize : "25px"}}>
 <li>샹영시간 :{runtime}분</li>
 <li>평점 : {rating}</li>
 <li>추천수 : {like_count}</li>

@@ -5,12 +5,12 @@ import axios from "axios"
 const SemeDetail = lazy(()=>import("./SemeDetail"))
 const Detail = () => {
 const [state,setState] =useState({})
-const {id}=useParams();
-
+const {id}=useParams()
 useEffect(()=>{
 try{
  (async()=>setState(
-await(await axios(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)).data.data.movie))()
+await(await axios(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)).data.data.movie))
+()
 }
 catch(e){console.log(e)}},[])
 const{like_count,description_full,title_long,runtime,rating,genres,medium_cover_image}=state
@@ -23,10 +23,5 @@ genres={genres}
 runtime={runtime}
 rating={rating}
 medium_cover_image={medium_cover_image}
-/>
-</Suspense>
-}
-   
-</>)
-}
+/></Suspense>}</>)}
 export default Detail;
