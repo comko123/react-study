@@ -11,9 +11,7 @@ return <>
 <h3>평점 : {rest[4]}</h3>
 <ul>장르 : {rest[1].map((G,index)=><li key = {index}>{G}</li>)}</ul>
 <h2>줄거리 : {rest[2]}</h2>
-</div>
-</>
-}
+</div></>}
 
 const MoviePage = ({img,genres,sum,id,title,rat,text}) => {
 return (<div className = "movie">

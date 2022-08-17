@@ -9,8 +9,8 @@ const {id}=useParams();
 
 useEffect(()=>{
 try{
-const data = async()=>setState(
-await(await axios(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)).data.data.movie);data()
+ (async()=>setState(
+await(await axios(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)).data.data.movie))()
 }
 catch(e){console.log(e)}},[])
 const{like_count,description_full,title_long,runtime,rating,genres,medium_cover_image}=state
