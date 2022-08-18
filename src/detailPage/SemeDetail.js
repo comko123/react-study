@@ -5,7 +5,7 @@ title_long,runtime,rating,genres=[],medium_cover_image})=>{
     
 return(<>
 <div className="container">
-<img src={medium_cover_image}alt ="no"/>
+<img src={medium_cover_image} alt ="no"/>
 <div className="parts">
 <h1 className="title">제목 : {title_long}</h1>
 <ul style = {{fontSize : "25px"}}>

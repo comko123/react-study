@@ -16,7 +16,7 @@ return <>
 const MoviePage = ({img,genres,sum,id,title,rat,text}) => {
 return (<div className = "movie">
 {!!text ?
-(!!title.includes(text)||!!title.toLowerCase().includes(text))?
+(title.includes(text)||title.toLowerCase().includes(text))?
 movieData(img,genres,sum,title,rat,id):null
 : movieData(img,genres,sum,title,rat,id)}
 </div>)}

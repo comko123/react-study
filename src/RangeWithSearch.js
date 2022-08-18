@@ -1,7 +1,7 @@
 /*eslint-disable*/
-import React,{ useState,lazy, Suspense } from "react";
+import React,{ useState,lazy, Suspense } from "react"
 const Page = lazy(()=>import("./movieList/Page"))
-import "./css/RangeWithSearch.moudule.scss";
+import "./css/RangeWithSearch.moudule.scss"
 
 const RangeWithSearch = () => {
     const [data,setData] = useState(6)
@@ -28,5 +28,5 @@ const RangeWithSearch = () => {
     }
       
     
-    export default RangeWithSearch;
+    export default RangeWithSearch
     
