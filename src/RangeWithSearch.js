@@ -16,7 +16,7 @@ const RangeWithSearch = () => {
     </div>
 
     <div className="rightBox">
-    <input className = "inputType" type ="text" onChange={e=>setText(e.target.value)}/> 
+    <input placeholder="영화 제목" className = "inputType" type ="text" onChange={e=>setText(e.target.value)}/> 
     <h1 className="defaultTit">제목 : {text}</h1>
     </div>
 

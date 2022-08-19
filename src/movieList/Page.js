@@ -6,7 +6,6 @@ const Page = ({ratingDefault,textDefault}) => {
 const [data,setData] =useState([])
 const [ispending,startTransition] = useTransition()
 const state = useDeferredValue(data)
-
 useEffect(()=>{try{
 startTransition(async()=>
 setData(await(
