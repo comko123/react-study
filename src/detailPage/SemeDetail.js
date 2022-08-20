@@ -2,7 +2,6 @@
 import "../css/SemeDetaill.moudule.scss";
 const SemeDetail = ({like_count,description_full,
 title_long,runtime,rating,genres=[],medium_cover_image})=>{
-    
 return(<>
 <div className="container">
 <img src={medium_cover_image} alt ="no"/>
