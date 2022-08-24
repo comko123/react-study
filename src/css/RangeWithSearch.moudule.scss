@@ -1,5 +1,5 @@
-@mixin setMargin ($left , $right){
-margin-left: $left;
+@mixin setMargin ($left , $right)
+{margin-left: $left;
 margin-top: 60px;
 margin-right: $right;}
 
@@ -11,4 +11,5 @@ border-bottom : 8px solid orange;
 .defaultTit{border-radius: 10px;color :white}
 .leftBox{@include setMargin(120px,0px)}
 .rightBox{@include setMargin(0px,120px)}
-.inputType{width : 300px;height : 30px;}}
+.inputType{width : 300px;height : 30px; border : none; border-radius: 15px;}
+.inputType:focus{outline : none;}}
