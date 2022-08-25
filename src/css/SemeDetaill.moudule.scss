@@ -1,12 +1,10 @@
 @mixin direction($direection){
 display: flex;
 flex-direction: $direection;}
-
 @mixin marginSet($top,$bot,$lef) {
 margin-top: $top; 
 margin-bottom: $bot;
 margin-left: $lef;}
-
 body{
 color:white;
 background-color: black;
