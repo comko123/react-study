@@ -13,11 +13,11 @@ return <>
 <h2>줄거리 : {rest[2]}</h2>
 </div></>}
 
-const MoviePage = ({img,genres,sum,id,title,rat,text}) => {
+const MoviePage = ({medium_cover_image,genres,summary,id,title_long,rating,text}) => {
 return (<div className = "movie">
 {!!text ?
-(title.includes(text)||title.toLowerCase().includes(text))?
-movieData(img,genres,sum,title,rat,id):null
-: movieData(img,genres,sum,title,rat,id)}
+(title_long.includes(text)||title_long.toLowerCase().includes(text))?
+movieData(medium_cover_image,genres,summary,title_long,rating,id):null
+: movieData(medium_cover_image,genres,summary,title_long,rating,id)}
 </div>)}
 export default MoviePage

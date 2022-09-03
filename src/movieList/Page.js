@@ -16,13 +16,22 @@ catch(e){ console.log(e)}},[ratingDefault])
 return (
 <>
 {ispending?<h1>loading.....</h1>:
-state.map(({medium_cover_image,genres,summary,id,title_long,rating})=>{
-if(ratingDefault===Math.floor(rating)){
-return <Suspense key = {id} fallback={<h1>Loading...</h1>}>
-<MoviePage id = {id} title = {title_long} img = {medium_cover_image}
-genres = {genres} sum = {summary} rat = {rating} text = {textDefault}/>
-</Suspense>
-}})}
+// state.map(({medium_cover_image,genres,summary,id,title_long,rating})=>{
+// if(ratingDefault===Math.floor(rating)){
+// return <Suspense key = {id} fallback={<h1>Loading...</h1>}>
+// <MoviePage id = {id} title = {title_long} img = {medium_cover_image}
+// genres = {genres} sum = {summary} rat = {rating} text = {textDefault}/>
+// </Suspense>
+// }})
+
+state.map((item)=>{
+    if(ratingDefault===Math.floor(item.rating)){
+    return <Suspense key = {item.id} fallback={<h1>Loading...</h1>}>
+    <MoviePage {...item}  text = {textDefault}/>
+    </Suspense>
+    }})
+
+}
 </>
 )}
 export default Page
